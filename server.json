@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/visa-requirements",
   "title": "Visa Requirements",
   "description": "Visa Requirements MCP — passport visa rules for any nationality → destination pair",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/visa-requirements",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-visa-requirements",
