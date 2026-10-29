@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-visa-requirements",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Visa Requirements MCP — passport visa rules for any nationality → destination pair",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-visa-requirements": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "visa-requirements"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-visa-requirements.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/visa-requirements",
   "pipeworx": {
-    "sourceHash": "v1-58c9665bd6c82a89208cfa5be72d3ca23a5906c35d1411851198e4cd764c1a0d",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "mode": "gateway",
+    "slug": "visa-requirements",
+    "gatewaySlug": "visa-requirements",
+    "sourceHash": "v1-56696a6887feb6387d0f43b6b2afe57b8500d56d86c53c12ae3676910421f254",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
